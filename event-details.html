@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events Guide - Event Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Campus Events Guide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events Catalogue</a></li>
+                <li><a href="event-details.html" class="active">Featured Event</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle -->
+        <label class="dark-mode-control" for="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span>🌙 Dark Mode</span>
+        </label>
+    </header>
+
+    <main>
+
+        <!-- Event Overview Section -->
+        <article class="event-details-container">
+            <header class="event-header">
+                <span class="badge">Featured Event</span>
+                <h2>Zewail City Tech & AI Summit 2026</h2>
+                <p class="tagline">Exploring the Next Horizon of Artificial Intelligence & Engineering</p>
+            </header>
+
+            <div class="details-media-grid">
+                <div class="event-poster">
+                    <img src="assets/event1.jpg" alt="Zewail City Tech and AI Summit Poster">
+                </div>
+
+                <div class="event-meta-info">
+                    <h3>Event Overview</h3>
+                    <ul>
+                        <li><strong>Date:</strong> November 15, 2026</li>
+                        <li><strong>Time:</strong> 10:00 AM – 04:00 PM</li>
+                        <li><strong>Venue:</strong> Main Auditorium, Zewail City</li>
+                        <li><strong>Ticket / Entry:</strong> Free for Zewailians (Registration Required)</li>
+                        <li><strong>Category:</strong> Technology & Artificial Intelligence</li>
+                    </ul>
+                    <a href="registration.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Description & Agenda Section -->
+            <section class="event-body">
+                <h3>About the Event</h3>
+                <p>The Zewail City Tech & AI Summit 2026 brings together top industry researchers, software engineers,
+                    and university students for an immersive day of discussions on machine learning, autonomous systems,
+                    and modern web development technologies.</p>
+
+                <h3>Event Agenda</h3>
+                <ol class="agenda-list">
+                    <li><strong>10:00 AM - 10:30 AM:</strong> Opening Ceremony & Keynote Address</li>
+                    <li><strong>10:30 AM - 12:00 PM:</strong> Session 1: Advances in Generative AI</li>
+                    <li><strong>12:00 PM - 01:00 PM:</strong> Networking Lunch & Student Project Showcase</li>
+                    <li><strong>01:00 PM - 02:30 PM:</strong> Session 2: Web Engineering & Cloud Systems</li>
+                    <li><strong>02:30 PM - 04:00 PM:</strong> Panel Discussion & Q&A</li>
+                </ol>
+
+                <!-- Media Section (Video Requirement) -->
+                <section class="event-media">
+                    <h3>Event Teaser Video</h3>
+                    <p>Watch last year's recap video to get a glimpse of the summit experience:</p>
+                    <video controls poster="assets/event1.jpg">
+                        <source src="assets/promo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+                <!-- Event Review Form Section -->
+                <section class="review-section">
+                    <h3>Submit Your Event Review / Feedback</h3>
+                    <form action="#" method="post" class="review-form">
+                        <div class="form-group">
+                            <label for="reviewer-name">Your Full Name:</label>
+                            <input type="text" id="reviewer-name" name="reviewer_name" required maxlength="50"
+                                placeholder="e.g. Ahmed Ali">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review-rating">Rating (1 to 5):</label>
+                            <input type="number" id="review-rating" name="rating" min="1" max="5" required
+                                placeholder="5">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review-comments">Your Comments:</label>
+                            <textarea id="review-comments" name="comments" rows="4" required maxlength="300"
+                                placeholder="Share your experience or expectation..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review-file">Upload Attachment (e.g. Student ID or Photo):</label>
+                            <input type="file" id="review-file" name="review_file" accept="image/*,.pdf">
+                        </div>
+
+                        <button type="submit" class="btn">Submit Review</button>
+                    </form>
+                </section>
+            </section>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events Guide - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Campus Events Guide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="events.html">Events Catalogue</a></li>
+                <li><a href="event-details.html">Featured Event</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle -->
+        <label class="dark-mode-control" for="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span>🌙 Dark Mode</span>
+        </label>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Welcome to Campus Events Guide</h2>
+            <p>Your ultimate portal to discover, track, and participate in all academic, technical, and cultural events
+                at Zewail City of Science and Technology.</p>
+        </section>
+
+        <section class="featured-events">
+            <h2>Featured Campus Events</h2>
+            <p>Explore our top upcoming events designed to empower students and foster innovation.</p>
+
+            <div class="events-grid">
+
+                <!-- Event 1: The Main Featured Event -->
+                <article class="event-card featured">
+                    <img src="assets/event1.jpg" alt="Zewail City Tech and AI Summit Poster">
+                    <div class="card-content">
+                        <span class="badge">Main Featured</span>
+                        <h3>Zewail City Tech & AI Summit 2026</h3>
+                        <p class="event-date"><strong>Date:</strong> November 15, 2026</p>
+                        <p class="event-venue"><strong>Venue:</strong> Main Auditorium, Zewail City</p>
+                        <p class="event-description">Join industry experts and researchers for a full day of discussions
+                            on Artificial Intelligence, Robotics, and Software Engineering.</p>
+                        <a href="event-details.html" class="btn">View Event Details</a>
+                    </div>
+                </article>
+
+                <!-- Event 2 -->
+                <article class="event-card">
+                    <img src="assets/event2.jpg" alt="Annual Campus Art and Photography Exhibition">
+                    <div class="card-content">
+                        <h3>Annual Campus Art & Exhibition</h3>
+                        <p class="event-date"><strong>Date:</strong> December 01, 2026</p>
+                        <p class="event-venue"><strong>Venue:</strong> Student Center Hall</p>
+                        <p class="event-description">A creative display showcasing the finest paintings, digital design
+                            work, and photography created by talented campus students.</p>
+                        <a href="event-details.html" class="btn">View Event Details</a>
+                    </div>
+                </article>
+
+                <!-- Event 3 -->
+                <article class="event-card">
+                    <img src="assets/event3.jpg" alt="Engineering Innovation and Career Fair">
+                    <div class="card-content">
+                        <h3>Engineering Innovation & Career Fair</h3>
+                        <p class="event-date"><strong>Date:</strong> December 20, 2026</p>
+                        <p class="event-venue"><strong>Venue:</strong> CIE Building Courtyard</p>
+                        <p class="event-description">Connect with top engineering companies, present your graduation
+                            projects, and explore internship and career opportunities.</p>
+                        <a href="event-details.html" class="btn">View Event Details</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

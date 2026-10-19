@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events Guide - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Campus Events Guide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events Catalogue</a></li>
+                <li><a href="event-details.html">Featured Event</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="registration.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle -->
+        <label class="dark-mode-control" for="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span>🌙 Dark Mode</span>
+        </label>
+    </header>
+
+    <main>
+
+        <section class="registration-section">
+
+            <!-- Event Banner Header -->
+            <div class="registration-header">
+                <h2>Event Registration</h2>
+                <div class="featured-event-summary">
+                    <h3>Zewail City Tech &amp; AI Summit 2026</h3>
+                    <p><strong>Date:</strong> November 15, 2026 | <strong>Time:</strong> 10:00 AM – 04:00 PM</p>
+                    <p><strong>Venue:</strong> Main Auditorium, Zewail City</p>
+                </div>
+            </div>
+
+            <div class="registration-container">
+
+                <!-- Registration Form -->
+                <form action="#" method="post" class="event-form">
+                    <h3>Attendee Information Form</h3>
+
+                    <!-- 1. Text Input -->
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="full_name" required maxlength="60"
+                            placeholder="e.g. Mohamed Ahmed">
+                    </div>
+
+                    <!-- 2. Email Input -->
+                    <div class="form-group">
+                        <label for="email">University Email *</label>
+                        <input type="email" id="email" name="email" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="student@zewailcity.edu.eg">
+                    </div>
+
+                    <!-- 3. Number Input -->
+                    <div class="form-group">
+                        <label for="student-id">Student ID / National ID *</label>
+                        <input type="number" id="student-id" name="student_id" required min="20200000" max="20279999"
+                            placeholder="20260001">
+                    </div>
+
+                    <!-- 4. URL Input -->
+                    <div class="form-group">
+                        <label for="portfolio-url">LinkedIn / Portfolio URL</label>
+                        <input type="url" id="portfolio-url" name="portfolio_url"
+                            placeholder="https://linkedin.com/in/username">
+                    </div>
+
+                    <!-- 5. Select Control -->
+                    <div class="form-group">
+                        <label for="academic-level">Academic Level / Category *</label>
+                        <select id="academic-level" name="academic_level" required>
+                            <option value="">-- Select Your Level --</option>
+                            <option value="undergraduate">Undergraduate Student</option>
+                            <option value="postgraduate">Postgraduate Student</option>
+                            <option value="faculty">Faculty Member / Researcher</option>
+                            <option value="visitor">External Visitor</option>
+                        </select>
+                    </div>
+
+                    <!-- 6. Radio Controls -->
+                    <div class="form-group">
+                        <label>Attendance Type *</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="attendance_type" value="in-person" required checked>
+                                In-Person (On Campus)</label>
+                            <label><input type="radio" name="attendance_type" value="virtual"> Virtual (Live
+                                Stream)</label>
+                        </div>
+                    </div>
+
+                    <!-- 7. Time Input -->
+                    <div class="form-group">
+                        <label for="arrival-time">Expected Arrival Time *</label>
+                        <input type="time" id="arrival-time" name="arrival_time" required min="09:00" max="16:00">
+                    </div>
+
+                    <!-- 8. Date Input -->
+                    <div class="form-group">
+                        <label for="attendance-date">Confirmation Date *</label>
+                        <input type="date" id="attendance-date" name="attendance_date" required min="2026-11-01"
+                            max="2026-11-15">
+                    </div>
+
+                    <!-- 9. Range Control -->
+                    <div class="form-group">
+                        <label for="experience-level">Self-Assessed Technical Experience (1 = Beginner, 10 =
+                            Expert)</label>
+                        <input type="range" id="experience-level" name="experience_level" min="1" max="10" value="5">
+                    </div>
+
+                    <!-- 10. Color Input -->
+                    <div class="form-group">
+                        <label for="badge-color">Preferred Badge Color Accent</label>
+                        <input type="color" id="badge-color" name="badge_color" value="#0056b3">
+                    </div>
+
+                    <!-- 11. File Input -->
+                    <div class="form-group">
+                        <label for="id-card">Upload Student ID Photo / Proof *</label>
+                        <input type="file" id="id-card" name="id_card" required accept="image/*,.pdf">
+                    </div>
+
+                    <!-- 12. Textarea Control -->
+                    <div class="form-group">
+                        <label for="access-needs">Special Access Needs or Dietary Requirements</label>
+                        <textarea id="access-needs" name="access_needs" rows="3" maxlength="250"
+                            placeholder="Let us know if you require wheelchair access or special meals..."></textarea>
+                    </div>
+
+                    <!-- 13. Checkbox Control -->
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" name="terms_agreed" required>
+                            I agree to the Campus Event Code of Conduct and Rules. *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Complete Registration</button>
+                </form>
+
+                <!-- Contact Information Sidebar -->
+                <aside class="contact-info-card">
+                    <h3>Event Contact Info</h3>
+                    <p>Have questions regarding registration or attendance?</p>
+                    <ul>
+                        <li><strong>Email:</strong> events@zewailcity.edu.eg</li>
+                        <li><strong>Phone:</strong> +20 2 38540400</li>
+                        <li><strong>Office:</strong> CIE Program Office, Building B</li>
+                        <li><strong>Hours:</strong> Sun - Thu, 9:00 AM - 4:00 PM</li>
+                    </ul>
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

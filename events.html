@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events Guide - Events Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Campus Events Guide</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events Catalogue</a></li>
+                <li><a href="event-details.html">Featured Event</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+        <!-- Dark Mode Toggle -->
+        <label class="dark-mode-control" for="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span>🌙 Dark Mode</span>
+        </label>
+    </header>
+
+    <main>
+
+        <section class="catalogue-intro">
+            <h2>All Campus Events</h2>
+            <p>Browse our complete list of upcoming workshops, symposiums, and past highlights.</p>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+
+                <!-- Main Featured Event -->
+                <article class="event-card">
+                    <img src="assets/event1.jpg" alt="Zewail City Tech and AI Summit Poster">
+                    <div class="card-content">
+                        <span class="category">Technology & AI</span>
+                        <h3>Zewail City Tech & AI Summit 2026</h3>
+                        <p class="event-date"><strong>Date:</strong> November 15, 2026</p>
+                        <p class="event-venue"><strong>Venue:</strong> Main Auditorium, Zewail City</p>
+                        <a href="event-details.html" class="btn">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Upcoming Event 2 -->
+                <article class="event-card">
+                    <img src="assets/event2.jpg" alt="Annual Campus Art and Exhibition Poster">
+                    <div class="card-content">
+                        <span class="category">Art & Culture</span>
+                        <h3>Annual Campus Art & Exhibition</h3>
+                        <p class="event-date"><strong>Date:</strong> December 01, 2026</p>
+                        <p class="event-venue"><strong>Venue:</strong> Student Center Hall</p>
+                        <a href="event-details.html" class="btn">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Upcoming Event 3 -->
+                <article class="event-card">
+                    <img src="assets/event3.jpg" alt="Engineering Innovation and Career Fair Poster">
+                    <div class="card-content">
+                        <span class="category">Engineering & Career</span>
+                        <h3>Engineering Innovation & Career Fair</h3>
+                        <p class="event-date"><strong>Date:</strong> December 20, 2026</p>
+                        <p class="event-venue"><strong>Venue:</strong> CIE Building Courtyard</p>
+                        <a href="event-details.html" class="btn">View Details</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Past Events Section -->
+        <section class="events-section">
+            <h2>Past Events</h2>
+            <div class="events-grid">
+
+                <!-- Past Event 1 -->
+                <article class="event-card past-event">
+                    <img src="assets/event1.jpg" alt="Renewable Energy Symposium Poster">
+                    <div class="card-content">
+                        <span class="category">Research & Science</span>
+                        <h3>Renewable Energy Symposium 2025</h3>
+                        <p class="event-date"><strong>Date:</strong> October 10, 2025</p>
+                        <p class="event-venue"><strong>Venue:</strong> Physics Lecture Hall</p>
+                        <a href="event-details.html" class="btn btn-secondary">View Summary</a>
+                    </div>
+                </article>
+
+                <!-- Past Event 2 -->
+                <article class="event-card past-event">
+                    <img src="assets/event2.jpg" alt="Cybersecurity Workshop Poster">
+                    <div class="card-content">
+                        <span class="category">Cybersecurity</span>
+                        <h3>Hands-on Cybersecurity Workshop</h3>
+                        <p class="event-date"><strong>Date:</strong> May 18, 2025</p>
+                        <p class="event-venue"><strong>Venue:</strong> Computer Lab 3</p>
+                        <a href="event-details.html" class="btn btn-secondary">View Summary</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Campus Events Guide. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
